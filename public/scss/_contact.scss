@@ -1,0 +1,84 @@
+//
+// contact.scss
+//
+.contact-detail {
+    i {
+        font-size: 30px;
+        width: 96px;
+        height: 96px;
+        line-height: 96px;
+    }
+    .content {
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+.form-group {
+    label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .form-control {
+        box-shadow: none;
+        border: 1px solid $gray-300;
+        height: 40px;
+        font-size: 13px;
+        border-radius: 4px;
+        transition: all 0.5s ease;
+        &:focus, &.active {
+            border-color: $custom;
+        }
+    }
+    .icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 40px;
+        font-size: 16px;
+    } 
+    textarea {
+        height: 120px !important;
+        &.form-control {
+            line-height: 25px;
+        }
+    }
+}
+.error {
+    margin: 8px 0px;
+    display: none;
+    color: $danger;
+}
+  
+#ajaxsuccess {
+    font-size: 16px;
+    width: 100%;
+    display: none;
+    clear: both;
+    margin: 8px 0px;
+}
+
+.error_message {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid $danger;
+    color: $danger;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-loader {
+    display: none;
+}
+  
+#success_page {
+    text-align: center;
+    margin-bottom: 50px;
+    h3 {
+        color: $success;
+        font-size: 22px;
+    }
+}

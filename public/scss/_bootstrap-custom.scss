@@ -1,0 +1,57 @@
+//
+// Bootstrap-custom.scss
+//
+@each $heading,
+$size in $font-sizes {
+    #{$heading} {
+        font-size: $size;
+    }
+}
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+    a {
+        &.text-#{$name} {
+            &:hover {
+                color: darken($value, 8%) !important;
+            }
+        }
+    }
+}
+
+//li (list inline item)
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 0px;
+} 
+// Rounded
+.rounded {
+    border-radius: 6px !important;
+}
+.rounded-top {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+.rounded-left {
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+.rounded-bottom {
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+.rounded-right {
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+
+//modal
+.modal-open {
+    padding-right: 0 !important;
+}

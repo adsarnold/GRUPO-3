@@ -1,0 +1,59 @@
+//
+// footer.scss
+//
+.footer {
+    position: relative;
+    .footer-logo {
+        color: $white !important;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 1px solid $white;
+        padding: 3px 5px;
+    }
+    .footer-head {
+        font-size: 14px; 
+        letter-spacing: 1.5px;        
+        font-weight: 500;
+    }    
+    .footer-list {
+        a {
+            transition: all 0.5s ease;
+            &:hover {
+                color: $custom;
+            }
+        }
+    }
+    .tagcloud {
+        a {
+            background: $gray-700;
+            border-radius: 2px;
+            color: $gray-500;
+            display: inline-block;
+            font-size: 9px;
+            letter-spacing: 1px;
+            margin: 5px 10px 5px 0;
+            padding: 8px;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+            &:hover {
+                background: $custom;
+                color: $white;
+            }
+        }
+    }
+    .text-foot {
+        color: $gray-500;
+    }   
+    &.footer-bar {
+        border-top: 1px solid $gray-700;
+    }
+}
+@media (max-width: 767px) {
+    .footer {
+        &.footer-bar {
+            text-align: center;
+        }
+    }
+}

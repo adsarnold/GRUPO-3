@@ -1,0 +1,65 @@
+//
+// cta.scss
+//
+.bg-cta {
+    .play-btn {
+        height: 65px;
+        width: 65px;
+        font-size: 30px;
+        line-height: 55px;
+        border-radius: 50%;
+        display: inline-block; 
+        border: 5px solid rgba($white, 0.40);
+        margin-top: 30px;
+        background: $custom;
+        box-shadow: 0 0 0 8px rgba($white, 0.20);
+        transition: all 0.5s ease;
+        &:hover {
+            box-shadow: 0 0 0 15px rgba($white, 0.20);
+        }
+    }
+}
+
+//home button
+.watch-video a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    .play-icon-circle {
+        height: 50px;
+        width: 50px;
+        background-color: $custom;
+        line-height: 50px;
+        &.play-iconbar {
+            font-size: 17px;
+        }
+        &.play {
+            top: 77%;
+        }
+    }
+}
+//contact cta
+.contact-cta {
+    .intro-text {
+        .title {
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .cta-image {
+        .padding-less {
+            position: relative !important;
+            height: 300px !important;
+        }
+        .cta-image-content {
+            text-align: left !important;
+        }
+    }
+}
+@media (max-width: 767px){
+    .contact-cta, .contact-cta-button {
+        text-align: center !important;
+    }
+}

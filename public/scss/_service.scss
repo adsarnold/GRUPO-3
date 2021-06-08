@@ -1,0 +1,48 @@
+//
+// service.scss
+//
+.services {
+    transition: all 0.2s ease;
+    .icon { 
+        margin-top: -85px;
+        margin-left: 12px;
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        transform: rotate(45deg);
+        transition: all 0.5s ease;
+        text-align: center;
+        i {
+            display: block;
+            font-size: 30px;
+            transform: rotate(-45deg);
+        }
+    } 
+    .content {    
+        .title {
+            font-size: 18px;
+            letter-spacing: 0.6px;
+            transition: all 0.5s ease;
+            font-weight: 500;
+        }
+    }
+    &:hover {
+        border-color: $custom !important;
+        transform: translateY(-7px);
+        .icon {
+            border-color: $custom !important;
+            box-shadow: $shadow;   
+            background: $custom !important;
+            color: $white;
+        } 
+        &.serv-gradient {
+            .icon, 
+            &:hover {
+                border-color: linear-gradient(45deg, $custom, $primary) !important;
+            }
+            .icon { 
+                background: linear-gradient(45deg, $custom, $primary) !important;
+            }
+        }
+    }
+}

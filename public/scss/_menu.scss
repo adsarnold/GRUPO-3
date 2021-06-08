@@ -1,0 +1,131 @@
+//
+// menu.scss
+//
+.navbar-custom {
+    background-color: transparent;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+    .navbar-toggler {
+        color: $white;
+        font-size: 30px;
+        padding: 0px;
+    }
+    .navbar-brand {
+        color: $white !important;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 1px solid;
+        padding: 0px 5px;
+    }
+    .navbar-nav {
+        li {
+            a {
+                color: $white !important;
+                font-size: 13px;
+                background-color: transparent !important;
+                margin: 0 8px;
+                letter-spacing: 0.7px;
+                line-height: 24px;
+                text-transform: uppercase;
+                transition: all 0.5s;    
+                font-family: $font-family-base;
+                &:hover,
+                &:active{
+                    color: $custom !important;    
+                }
+            }
+            &.active a {
+                color: $custom !important;                
+            }
+        }        
+        .nav-item {
+            &:last-child {
+                .nav-link{
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+// Nav Sticky
+.nav-sticky{
+    &.navbar-custom {
+        margin-top: 0px;
+        padding: 12px 0px;
+        background-color: $white;
+        box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
+        color: $dark !important;
+        .navbar-toggler {
+            color: $body-color;
+        }
+        .navbar-nav {            
+            margin-top: 0px;
+            li {
+                a {
+                    color: #2f3545 !important;
+                    &:hover,
+                    &:active {
+                        color: $custom !important;
+                    }
+                }
+                &.active {
+                    a{
+                        color: $custom !important;
+                    }
+                }
+            }
+        }
+        &.sticky-light {
+            background-color: $white;
+        }
+    }  
+    .navbar-brand {
+        color: $dark !important;
+    }
+}
+//login button
+.login-button {
+    color: $white;
+    background-color: $custom;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all 0.5s;
+    border-radius: 0px;
+    padding: 10px 30px;
+    line-height: 60px;
+    border-radius: 8px;
+    letter-spacing: 0.8px;
+    &:hover {
+        color: $white;
+    }
+}
+@media (max-width: 1023px) {
+    .navbar-custom .nav-social {
+        display: none;
+    }
+}
+@media (max-height: 480px) {
+    .navbar-nav {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+}
+@media (min-width: 200px) and (max-width: 768px) {
+    .navbar-custom {
+        background-color: $dark;
+        padding: 10px 0px !important;
+    }
+    .navbar-custom .container {
+        width: 85%;
+    }
+    .login-button {
+        margin-left: 5px !important;
+    }
+}

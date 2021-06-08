@@ -1,0 +1,29 @@
+//
+// price.scss
+//
+.pricing-table {
+    transition: all 0.2s ease;
+    .pricing-plan {
+        letter-spacing: 0.8px; 
+    }
+    &:hover {
+        transform: translateY(-7px);
+    }
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .pricing-table {
+        &.business-plan {
+            transform: scale(1);
+        }
+    }
+}
+@media (min-width: 769px) {
+    .pricing-table {        
+        &.business-plan {
+            transform: scale(1.01);
+            box-shadow: 0px 0px 40px rgba($dark,0.09);
+            z-index: 1;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+//
+// helper.scss
+//
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.section-two {
+    padding: 60px 0;
+    position: relative;
+}
+.bg-overlay {
+    background-color: $overlay;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%
+}
+//Title
+.title-heading {
+    line-height: 26px;
+    .heading {
+        font-weight: 700;
+        font-size: 75px;
+        letter-spacing: 1px;
+    }
+    .para-desc {
+        font-size: 17px;
+    }
+}
+.section-title {
+    position: relative;
+    margin-bottom: 40px;
+    .title {
+        letter-spacing: 0.5px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+} 
+.para-desc {
+    max-width: 700px;
+}
+@media (min-width: 768px){
+    .mt-120 {
+        margin-top: 120px;
+    }
+}
+@media (max-width: 767px) {
+    .section {
+        padding: 60px 0;
+    }
+    .title-heading {
+        .heading {
+            font-size: 40px !important;
+        }
+    }
+}

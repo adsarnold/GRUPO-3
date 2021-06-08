@@ -1,0 +1,67 @@
+//
+//  work.scss
+//
+.container-filter {
+    li {
+        a {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            line-height: 35px;
+            &:hover, &.active {
+                color: $white !important;
+                background-color: $custom;
+                border-color: $custom !important;
+            }
+        }
+        &:first-child {
+            a {
+                border-top-left-radius: 30px !important;
+                border-bottom-left-radius: 30px !important;
+            }
+        }
+        &:last-child {
+            a {
+                border-top-right-radius: 30px !important;
+                border-bottom-right-radius: 30px !important;
+            }
+        }
+    }
+}
+
+.portfolio-box {
+    .work-img {
+        .work-detail {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0;
+            background: none repeat scroll 0 0 rgba($dark, 0.7);
+            transition: all 0.5s ease;
+            .content {
+                position: absolute;
+                bottom: -30px;
+                left: 0px;
+                padding-left: 30px;
+                transition: all 0.5s ease;
+                opacity: 0;
+                .title {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &:hover {
+            .work-detail {
+                opacity: 1;
+                .content {
+                    bottom: 30px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
