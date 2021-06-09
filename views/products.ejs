@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uma nova página html</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Produtos</h1>
+    <p>Bem vindo a nova página html</p>
+    </div>
+    <div class="navbar">
+      <a href="http://localhost:3000/">Home</a>
+      <a href="http://localhost:3000/about">Quem Somos</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </div>
+    <style>
+
+     
+      .navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: rgba(86, 2, 124, 0.87); /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: rgb(255, 255, 255); /* White text color */
+  text-align: center; /* Center the text */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}</style>
+    <div class= "lista">
+    <ul> Tipo 1: Televisão </ul>
+    
+      <img width="568" height="371" src="https://www.magodatecnologia.com.br/wp-content/uploads/2020/04/Televisão-0.jpg" class="atf_img post-featured-image post-featured-image--inline wp-post-image" alt="" srcset="https://www.magodatecnologia.com.br/wp-content/uploads/2020/04/Televisão-0.jpg 768w, https://www.magodatecnologia.com.br/wp-content/uploads/2020/04/Televisão-0-300x145.jpg 300w" sizes="(max-width: 768px) 100vw, 768px"></td></tr>
+   
+    
+    <ul> Tipo 2: Geladeira </ul>
+  </div>
+    <style>
+      .header {
+  padding: 90px;
+  text-align: center;
+  overflow: hidden;;
+  background-image: url("https://wallpaperaccess.com/full/1615368.jpg");
+  background-repeat: no-repeat;
+  display: block;   
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  color: white;
+  font-size: 30px;
+  font-stretch: expanded;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+  
+  .lista {
+  
+}
+  
+  </style>
+
+    </div>    
+  </body>
+</html>
+
+<!---- End -–>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='../stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Bem Vindos <%= title %></p>
+    <% products.forEach(function(product) { %>
+      <ul>(Nome: <%= product.name %>)</ul><br>
+      
+      <ul>(Tipo: <%= product.type %>)</ul>
+      <% }) %>
+
+    <p><strong><i>Bem vindos a nova página criada em js com estrutura HTML</i></strong> </p>
+  </body>
+</html>
