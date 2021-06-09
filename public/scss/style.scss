@@ -1,0 +1,44 @@
+/* Template Name: Orayo
+   Author: Themesdesign
+   Version: 1.0.0
+   Created: Jan 2021
+   File Description: Main Css file of the template
+*/
+
+/*********************************/
+/*            INDEX              */
+/*================================
+ *        01.  Variables         *
+ *        02.  Bootstrap-custom  *
+ *        03.  General           *
+ *        04.  Helper            *
+ *        05.  Components        *
+ *        06.  Menu              *
+ *        07.  Home              *
+ *        09.  Services          *
+ *        10.  CTA               *
+ *        11.  Team              *
+ *        12.  Work              *
+ *        13.  Testi             *
+ *        14.  Price             *
+ *        15.  Blog              *
+ *        16.  Contact           *
+ *        17.  Footer            *
+ ================================*/
+
+@import "variables";
+@import "bootstrap-custom";
+@import "general";
+@import "helper";
+@import "components";
+@import "menu";
+@import "home";
+@import "service";
+@import "cta";
+@import "team";
+@import "work";
+@import "testi";
+@import "price";
+@import "blog";
+@import "contact";
+@import "footer";

@@ -1,0 +1,60 @@
+//
+// variables.scss
+//
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:400,500,700&display=swap');
+
+// Color variables
+$white:                     #ffffff;
+
+$primary:                   #005ED1;
+$secondary:                 #9CA1A3;
+$success:                   #159B42;
+$info:                      #4BA2AA;
+$warning:                   #FCD581;
+$danger:                    #D52941;
+$dark:                      #353535;
+$muted:                     #707070;
+$light:                     #f8f8f8;
+
+//Gray
+$gray-100:                  #f8f9fa;
+$gray-200:                  #e9ecef;
+$gray-300:                  #dee2e6;
+$gray-400:                  #ced4da;
+$gray-500:                  #adb5bd;
+$gray-600:                  #6c757d; 
+$gray-700:                  #495057;
+//Custom
+$custom:                    #32cfaa;
+//Overlay
+$overlay:                   rgba(35, 37, 47, 0.8);
+// Body Background
+$body-color:                #535353;
+$shadow:                    0 .5rem 1rem rgba(0,0,0,.15);
+// Base font
+$font-size-base:            15px;
+
+$font-family-base:          'Rubik', sans-serif;
+$font-family-secondary:     'Roboto', sans-serif;
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "info": $info,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "custom": $custom,
+);
+
+$font-sizes: (
+    h1: 42px,
+    h2: 36px,
+    h3: 30px,
+    h4: 24px,
+    h5: 18px,
+    h6: 14px,
+);
