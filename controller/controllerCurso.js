@@ -2,7 +2,7 @@ const modelCurse = require("../model/modelCurso");
 
  async function get (req,res){
    const curse = await modelCurse.getCurso();
-   res.render("curso",{curse:curse});
+   res.render("curso",{courses:curse});
 }
 
 async function getEdit(req,res){
