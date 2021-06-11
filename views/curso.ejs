@@ -2,10 +2,6 @@
 <html>
   <head>
     <title>CURSOS</title>
-<<<<<<< HEAD
-    
-=======
->>>>>>> 444822b289dffbd32dde7261c61987d4540e9479
      <!-- Magnific -->
      <link href="stylesheets/magnific-popup.css" rel="stylesheet" type="text/css" />
      <!-- css -->
@@ -13,15 +9,6 @@
      <link href="stylesheets/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
      <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
   </head>
-<<<<<<< HEAD
-  <body>
-    
-
-    <main class="container">
-      <h1>CURSOS</h1>
-      <hr />
-      <section class="mt-3">
-=======
   <header>  
        <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
@@ -77,7 +64,6 @@
 <body>
     <main class="container">
            <section class="mt-3">
->>>>>>> 444822b289dffbd32dde7261c61987d4540e9479
         <h3>Cursos cadastrados</h3>
         <table class="table">
           <thead>
@@ -90,15 +76,6 @@
             </tr>
           </thead>
           <tbody>
-<<<<<<< HEAD
-            <% courses.forEach(function(course) { %>
-            <tr>
-              <th scope="row"><%- courses.id %></th>
-              <td><%- courses.tittle %></td>
-              <td><%- courses.extent %></td>
-              <td><%- courses.price %></td>
-              <td><%- courses.date %></td>
-=======
           <% courses.forEach(function(course) { %>
             <tr>
               <th scope="row"><%- course.id %></th>
@@ -106,32 +83,21 @@
               <td><%- course.extent %></td>
               <td><%- course.price %></td>
               <td><%- course.date %></td>
->>>>>>> 444822b289dffbd32dde7261c61987d4540e9479
               <td>
                 <div class="row">
                   <div class="col-md-3">
                     <a
                       role="button"
-<<<<<<< HEAD
-                      href="/courses/edit/<%-courses.id%>"
-=======
                       href="/curso/edit/<%-course.id%>"
->>>>>>> 444822b289dffbd32dde7261c61987d4540e9479
                       class="btn btn-warning"
                     >
                       Editar
                     </a>
                   </div>
                   <div class="col-md-3">
-<<<<<<< HEAD
-                    <form method="POST" action="/courses?_method=DELETE">
-                      <input type="text" hidden name="id" value="<%-courses.id%>" />
-                      <button role="delete" data-courses-id="<%-courses.id%> type="submit" class="btn btn-danger">
-=======
                     <form method="POST" action="/curso?_method=DELETE">
                       <input type="text" hidden name="id" value="<%-course.id%>" />
                       <button role="delete" data-courses-id="<%-course.id%> type="submit" class="btn btn-danger">
->>>>>>> 444822b289dffbd32dde7261c61987d4540e9479
                         Excluir
                       </button>
                     </form>
@@ -200,14 +166,6 @@
           </div>
         </form>
       </section>
-<<<<<<< HEAD
-    </main>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script
-=======
     </main><br><br><br>
 
     <!-- Footer Start -->
@@ -286,7 +244,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!--<script
->>>>>>> 444822b289dffbd32dde7261c61987d4540e9479
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
@@ -304,11 +261,6 @@
     ></script>
     ></script>
     <script src="/javascripts/doctor.js">
-<<<<<<< HEAD
-    </script>
-  </body>
-</html>
-=======
     </script>-->
 
     <!-- javascript -->
@@ -336,4 +288,3 @@
 
 
 
->>>>>>> 444822b289dffbd32dde7261c61987d4540e9479
