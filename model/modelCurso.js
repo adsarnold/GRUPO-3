@@ -7,7 +7,7 @@ async function getCurso() {
     return result;
   }
   async function getCursoById(id) {
-    const result = await db.query("select * from curses where id = :cursesId", {
+    const result = await db.query("select * from courses where id = :coursesId", {
       type: Sequelize.QueryTypes.SELECT,
       replacements: {
         coursesId: id
@@ -30,12 +30,12 @@ async function getCurso() {
   
   
   async function updateCurso(courses) {
-    await db.query("update courses set tittle = :tittle, extent = :extent, price = :price, date =:date where id = :id", {
+    await db.query("update courses set tittle = :tittle, extent = :extent, price = :price where id = :id", {
       replacements: {
+        id: courses.id,
         tittle: courses.tittle,
         extent: courses.extent,
-        price: courses.price,
-        date: courses.date
+        price: courses.price
       }
     })
   }
