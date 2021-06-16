@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>USUÁRIO</title>
+    <title> Detalhes dos Cursos</title>
      <!-- Magnific -->
      <link href="stylesheets/magnific-popup.css" rel="stylesheet" type="text/css" />
      <!-- css -->
@@ -50,7 +50,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="title-heading text-center mt-5 pt-4">
-                                <h1 class="heading text-white mb-3">USUÁRIO</h1>
+                                <h1 class="heading text-white mb-3">Cursos</h1>
                                                                 </div>
                             </div>
                         </div><!--end col-->
@@ -64,40 +64,40 @@
 <body>
     <main class="container">
            <section class="mt-3">
-        <h3>Usuários cadastrados</h3>
+        <h3>Cursos cadastrados</h3>
         <table class="table">
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Nome</th>
-              <th scope="col">Endereço</th>
-              <th scope="col">CPF</th>
+              <th scope="col">Título</th>
+              <th scope="col">Duração</th>
+              <th scope="col">Preço</th>
               <th scope="col">Data</th>
             </tr>
           </thead>
           <tbody>
-          <% courses.forEach(function(users) { %>
+          <% courses.forEach(function(course) { %>
             <tr>
               <th scope="row"><%- course.id %></th>
-              <td><%- users.name %></td>
-              <td><%- users.adress %></td>
-              <td><%- users.cpf %></td>
-              <td><%- users.date %></td>
+              <td><%- course.tittle %></td>
+              <td><%- course.extent %></td>
+              <td><%- course.price %></td>
+              <td><%- course.date %></td>
               <td>
                 <div class="row">
                   <div class="col-md-3">
                     <a
                       role="button"
-                      href="/users/edit/<%-users.id%>"
+                      href="/curso/edit/<%-course.id%>"
                       class="btn btn-warning"
                     >
                       Editar
                     </a>
                   </div>
                   <div class="col-md-3">
-                    <form method="POST" action="/users?_method=DELETE">
-                      <input type="text" hidden name="id" value="<%-users.id%>" />
-                      <button role="delete" data-courses-id="<%-users.id%> type="submit" class="btn btn-danger">
+                    <form method="POST" action="/curso?_method=DELETE">
+                      <input type="text" hidden name="id" value="<%-course.id%>" />
+                      <button role="delete" data-courses-id="<%-course.id%> type="submit" class="btn btn-danger">
                         Excluir
                       </button>
                     </form>
@@ -110,38 +110,38 @@
         </table>
       </section>
       <section class="mt-3">
-        <h3>Cadastro novo usuário</h3>
+        <h3>Cadastro novo curso</h3>
         <form action="" method="post">
           <div class="row">
             <div class="col-md-3">
               <div class="row">
                 <div class="col-md-12">
-                  <label for="tittle" class="form-label">Nome</label>
+                  <label for="tittle" class="form-label">Título</label>
                   <input
                     class="form-control"
                     type="text"
-                    id="name"
-                    name="name"
+                    id="tittle"
+                    name="tittle"
                     required
                   />
                 </div>
                 <div class="col-md-12">
-                  <label for="adress" class="form-label">Endereço</label>
+                  <label for="extent" class="form-label">Duração</label>
                   <input
                     class="form-control"
                     type="text"
-                    id="adress"
-                    name="adress"
+                    id="extent"
+                    name="extent"
                     required
                   />
                 </div>
                 <div class="col-md-12">
-                  <label for="price" class="form-label">CPF</label>
+                  <label for="price" class="form-label">Preço</label>
                   <input
                     class="form-control"
                     type="text"
-                    id="cpf"
-                    name="cpf"
+                    id="price"
+                    name="price"
                     required
                   />
                 </div>
