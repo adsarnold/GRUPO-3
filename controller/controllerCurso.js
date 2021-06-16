@@ -11,7 +11,7 @@ async function getEdit(req,res){
 async function post(req,res){
     const curse = req.body;
     await modelCurse.insertCurso(curse);
-    res.redirect("/curso");
+    res.redirect("/cursos");
 }
 module.exports = {
    get:get,
