@@ -15,6 +15,13 @@ html {
     text-decoration: none;
     font-weight: 400;
   }
+
+  .background-content {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("images/home/01.png");
+      }
+  
   
   h2 {
     text-align: center;
@@ -25,6 +32,7 @@ html {
     margin: 40px 8px 10px 8px; 
     color: #cccccc;
   }
+  
   
   
   
@@ -61,6 +69,7 @@ html {
     text-align: center;
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
+    font-size: 12px;
   }
   
   
@@ -134,6 +143,27 @@ html {
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
   }
+
+  input[type=password] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
   
   input[type=text]:focus {
     background-color: #fff;
@@ -141,6 +171,15 @@ html {
   }
   
   input[type=text]:placeholder {
+    color: #cccccc;
+  }
+
+  input[type=password]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #9632cf;
+  }
+  
+  input[type=password]:placeholder {
     color: #cccccc;
   }
   
@@ -234,8 +273,8 @@ html {
     left: 0;
     bottom: -10px;
     width: 0;
-    height: 2px;
-    background-color: #56baed;
+    height: 1px;
+    background-color: #9632cf;
     content: "";
     transition: width 0.2s;
   }
@@ -247,6 +286,7 @@ html {
   .underlineHover:hover:after{
     width: 100%;
   }
+
   
   
   
@@ -257,6 +297,7 @@ html {
   } 
   
   #icon {
-    width:60%;
+    width:40%;
+    padding-top: 15px;
   }
   

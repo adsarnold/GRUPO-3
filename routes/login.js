@@ -20,7 +20,7 @@ router.post("/", middleware.validateCredentials, function (req, res) {
   }
 
   req.session.user = user;
-  res.redirect("/curso");
+  res.redirect("/cursos");
 });
 
 module.exports = router;

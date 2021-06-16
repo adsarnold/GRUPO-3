@@ -5,16 +5,16 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <link href="stylesheets/login.css" rel="stylesheet" type="text/css" />
-
 <div class="wrapper fadeInDown">
   <div id="formContent">
+    
     <!-- Tabs Titles -->
 
     <!-- Icon -->
     <div class="fadeIn first">
-        <img src="images/devollution.png" alt="some text" width=210 height=60>
-    </div>
-
+        <img src="images/devollution.png" alt="some text" width=210 height=60 id="icon">
+    </div><br>
+    <div id="background-content" class="background-content">
     <!-- Login Form -->
     <form method="POST">
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="usuário">
@@ -24,9 +24,11 @@
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">Esqueceu a senha?</a>
+      <a class="underlineHover" href="#">Esqueceu a senha?</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      <a class="underlineHover" href="/">Voltar para Home</a>
     </div>
 
   </div>
+</div>
 </div>
 </html>
