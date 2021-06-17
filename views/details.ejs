@@ -50,7 +50,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="title-heading text-center mt-5 pt-4">
-                                <h1 class="heading text-white mb-3">Cursos</h1>
+                                <h1 class="heading text-white mb-3">Informações dos Cursos</h1>
                                                                 </div>
                             </div>
                         </div><!--end col-->
@@ -60,113 +60,76 @@
         </div><!--end home center-->
     </section><!--end section-->
     <!-- Hero End -->
-</header><br><br><br><br><br>
+</header>
 <body>
-    <main class="container">
-           <section class="mt-3">
-        <h3>Cursos cadastrados</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Título</th>
-              <th scope="col">Duração</th>
-              <th scope="col">Preço</th>
-              <th scope="col">Data</th>
-            </tr>
-          </thead>
-          <tbody>
-          <% courses.forEach(function(course) { %>
-            <tr>
-              <th scope="row"><%- course.id %></th>
-              <td><%- course.tittle %></td>
-              <td><%- course.extent %></td>
-              <td><%- course.price %></td>
-              <td><%- course.date %></td>
-              <td>
-                <div class="row">
-                  <div class="col-md-3">
-                    <a
-                      role="button"
-                      href="/curso/edit/<%-course.id%>"
-                      class="btn btn-warning"
-                    >
-                      Editar
-                    </a>
-                  </div>
-                  <div class="col-md-3">
-                    <form method="POST" action="/curso?_method=DELETE">
-                      <input type="text" hidden name="id" value="<%-course.id%>" />
-                      <button role="delete" data-courses-id="<%-course.id%> type="submit" class="btn btn-danger">
-                        Excluir
-                      </button>
-                    </form>
-                  </div>
+    <!-- Services Start -->
+    <section class="section bg-light" id="offer">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                  <div class="section-title">
+                      <h4 class="title text-uppercase mb-4">Informações sobre os nossos principais cursos de desenvolvimento</h4>
+                      </div>
+              </div><!--end col-->
+          </div><!--end row-->
+          <section class="section bg-light" id="offer">
+            <div class="container">
+          <div class="tab-content mt-3" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-cloud" role="tabpanel" aria-labelledby="pills-cloud-tab">
+                <div class="capabilities-content border rounded p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mt-4 pt-2">
+                            <h4 class="title">Curso Completo de Desenvolvedor Web</h4>
+                            <p class="text-muted">Aprenda desenvolvimento web, crie um site do zero do básico ao avançado, aprenda HTML5 e CSS3 com muito JavaScript.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Crie sites incríveis com HTML5 e CSS3 </li>
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Aprenda a criar um site responsivo temático</li>
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Mais de 15 horas de gravação</li>
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Didática impressionante com ilustrações</li>
+                            </ul>
+                            
+                        </div><!--end col-->
+
+                        <div class="col-md-6 mt-4 pt-2">
+                            <img src="images/feature/Programming.png" class="img-fluid d-block mx-auto" alt="">
+                        </div><!--end col-->
+                    </div><!--end row-->
                 </div>
-              </td>
-            </tr>
-            <% });%>
-          </tbody>
-        </table>
-      </section>
-      <section class="mt-3">
-        <h3>Cadastro novo curso</h3>
-        <form action="" method="post">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="row">
-                <div class="col-md-12">
-                  <label for="tittle" class="form-label">Título</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="tittle"
-                    name="tittle"
-                    required
-                  />
-                </div>
-                <div class="col-md-12">
-                  <label for="extent" class="form-label">Duração</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="extent"
-                    name="extent"
-                    required
-                  />
-                </div>
-                <div class="col-md-12">
-                  <label for="price" class="form-label">Preço</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="price"
-                    name="price"
-                    required
-                  />
-                </div>
-                <div class="col-md-12">
-                  <label for="date" class="form-label">Data</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="date"
-                    name="date"
-                    required
-                  />
-                </div>
-                <div class="mt-1 d-flex justify-content-end">
-                  <button type="reset" class="btn btn-default">Cancelar</button>
-                  <button type="submit" class="btn btn-primary">
-                    Cadastrar
-                  </button>
-                </div>
-              </div>
             </div>
-          </div>
-        </form>
-      </section>
-    </main><br><br><br>
+                  
+          </section><!--end teb pane-->
+
+          <section class="section bg-light" id="offer">
+            <div class="container">
+              <div class="col-md-6 mt-4 pt-2">
+                <img src="images/feature/Programming.png" class="img-fluid d-block mx-auto" alt="">
+            </div><!--end col--></div>
+          <div class="tab-content mt-3" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-cloud" role="tabpanel" aria-labelledby="pills-cloud-tab">
+                <div class="capabilities-content border rounded p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mt-4 pt-2">
+                            <h4 class="title">Curso Completo de Desenvolvedor Web</h4>
+                            <p class="text-muted">Aprenda desenvolvimento web, crie um site do zero do básico ao avançado, aprenda HTML5 e CSS3 com muito JavaScript.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Crie sites incríveis com HTML5 e CSS3 </li>
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Aprenda a criar um site responsivo temático</li>
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Mais de 15 horas de gravação</li>
+                                <li class="mt-2"><i class="mdi mdi-album mr-3 text-custom"></i>Didática impressionante com ilustrações</li>
+                            </ul>
+                            
+                        </div><!--end col-->
+
+                        
+                    </div><!--end row-->
+                </div>
+            </div>
+            
+          </div> </div></section>
+          
+        <!--end teb pane-->
+
+
 
     <!-- Footer Start -->
     <footer class="footer py-5 bg-dark">
@@ -182,7 +145,7 @@
                         <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
                         <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
                     </ul><!--end icon-->
-                </div><!--end col-->
+                </div> <!--end col-->
 
                 <div class="col-lg-2 col-md-3 mt-4 pt-2 mt-lg-0 pt-lg-0">
                     <h4 class="text-light text-uppercase footer-head">Links</h4>
