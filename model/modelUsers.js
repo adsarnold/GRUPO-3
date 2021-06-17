@@ -18,40 +18,17 @@ async function getUsers() {
   }
   
   async function insertUsers(users) {
-    await db.query("insert into users (name, adress, cpf, date) values (:name, :adress, :cpf, :date)", {
+    await db.query("insert into users (name, password) values (:name, :password)", {
       replacements: {
         name: users.name,
-        adress: users.adress,
-        cpf: users.cpf,
-        date: users.date
+        senhas: users.senhas
       }
     })
   }
   
-  
-  async function updateUsers(users) {
-    await db.query("update users set name = :name, adress = :adress, cpf = :cpf, date =:date where id = :id", {
-      replacements: {
-        name: courses.name,
-        adress: courses.adress,
-        cpf: courses.cpf,
-        date: courses.date
-      }
-    })
-  }
-  
-  async function removeUsers(usersID) {
-    await db.query("delete from users where id = :id", {
-      replacements: {
-        id: usersID
-      }
-    })
-  }
   
   module.exports = {
     getUsers: getUsers,
-    insertUsers: insertUsers,
-    updateUsers: updateUsers,
-    removeUsers: removeUsers,
+    insertUsers: insertUsers,    
     getUsersById: getUsersById,
   };

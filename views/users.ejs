@@ -70,9 +70,7 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">Nome</th>
-              <th scope="col">Endereço</th>
-              <th scope="col">CPF</th>
-              <th scope="col">Data</th>
+              <th scope="col">Senha</th>
             </tr>
           </thead>
           <tbody>
@@ -80,9 +78,7 @@
             <tr>
               <th scope="row"><%- users.id %></th>
               <td><%- users.name %></td>
-              <td><%- users.adress %></td>
-              <td><%- users.cpf %></td>
-              <td><%- users.date %></td>
+              <td><%- users.senhas %></td>
               <td>
                 <div class="row">
                   <div class="col-md-3">
@@ -94,14 +90,7 @@
                       Editar
                     </a>
                   </div>
-                  <div class="col-md-3">
-                    <form method="POST" action="/users?_method=DELETE">
-                      <input type="text" hidden name="id" value="<%-users.id%>" />
-                      <button role="delete" data-courses-id="<%-users.id%> type="submit" class="btn btn-danger">
-                        Excluir
-                      </button>
-                    </form>
-                  </div>
+                 
                 </div>
               </td>
             </tr>
@@ -125,33 +114,14 @@
                     required
                   />
                 </div>
+               
                 <div class="col-md-12">
-                  <label for="adress" class="form-label">Endereço</label>
+                  <label for="date" class="form-label">Senha</label>
                   <input
                     class="form-control"
                     type="text"
-                    id="adress"
-                    name="adress"
-                    required
-                  />
-                </div>
-                <div class="col-md-12">
-                  <label for="price" class="form-label">CPF</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="cpf"
-                    name="cpf"
-                    required
-                  />
-                </div>
-                <div class="col-md-12">
-                  <label for="date" class="form-label">Data</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="date"
-                    name="date"
+                    id="password"
+                    name="password"
                     required
                   />
                 </div>

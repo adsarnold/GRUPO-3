@@ -89,14 +89,14 @@
                   <div class="col-md-3">
                     <a
                       role="button"
-                      href="/curso/edit/<%-course.id%>"
+                      href="/cursos/edit/<%-course.id%>"
                       class="btn btn-warning"
                     >
                       Editar
                     </a>
                   </div>
                   <div class="col-md-6">
-                    <form method="POST" action="/curso?_method=DELETE">
+                    <form method="POST" action="/cursos?_method=DELETE">
                       <input type="text" hidden name="id" value="<%-course.id%>" />
                       <button role="delete" data-courses-id="<%-course.id%> type="submit" class="btn btn-danger">
                         Excluir
@@ -176,7 +176,7 @@
     <div class="container px-lg-5">
         <div class="row mx-lg-n5">
             <div class="col-6 col-md-4">
-    <img src="images/feature/Programming.png" class="img-fluid float-right mx-auto" alt="">
+  
 </div><!--end col-->
 </div><!--end row-->
 </div>
