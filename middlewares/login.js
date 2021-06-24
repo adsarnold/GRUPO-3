@@ -22,7 +22,7 @@ function login(req, res, next) {
       }
   
       if (!req.session.user.role.includes(requireRole)) {
-        return res.redirect("/login");
+        return res.redirect("/cursos");
       }
   
       return next();
