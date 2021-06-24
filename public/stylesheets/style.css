@@ -330,14 +330,18 @@ p {
 }
 
 .btn-warning {
-  background-color: #FCD581 !important;
-  border: 1px solid #FCD581 !important;
+  background-color: #9632cf !important;
+  border: 1px solid #9632cf !important;
   color: #ffffff !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 5px 7px;
+  border-radius: 3px;
 }
 
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.focus {
-  background-color: #fbc44f !important;
-  border-color: #fbc44f !important;
+  background-color: #313131 !important;
+  border-color: #313131 !important;
   color: #ffffff !important;
 }
 
@@ -1376,4 +1380,5 @@ button:not(:disabled) {
     text-align: center;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

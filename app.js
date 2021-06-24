@@ -10,8 +10,14 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var cursoRouter = require('./routes/curso');
 var myaccountRouter = require('./routes/myaccount');
+<<<<<<< HEAD
 var loginRouter = require('./routes/login');
 var cursophp7Router = require('./routes/cursophp7');
+=======
+var loginRouter = require('./routes/login')
+var cursophpRouter = require('./routes/cursophp');
+
+>>>>>>> 5c8a321ba90fd95d60ce3ec9bea4bcca0d6e0bd3
 var listRouter = require('./routes/list');
 var detailsRouter = require('./routes/details');
 
@@ -40,7 +46,11 @@ app.use('/users', usersRouter);
 app.use('/cursos', cursoRouter);
 app.use('/myaccount', myaccountRouter);
 app.use('/login', loginRouter);
+<<<<<<< HEAD
 app.use('/cursophp7', cursophp7Router);
+=======
+app.use('/cursophp', cursophpRouter)
+>>>>>>> 5c8a321ba90fd95d60ce3ec9bea4bcca0d6e0bd3
 
 app.use('/list', listRouter);
 app.use('/details', detailsRouter);

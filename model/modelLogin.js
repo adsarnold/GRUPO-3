@@ -5,9 +5,9 @@
  */
  const users = [
   {
-    login: "admin",
+    login: "adriano",
     role: ["admin", "manager"],
-    password: "admin123",
+    password: "adriano",
   },
   {
     login: "manager",

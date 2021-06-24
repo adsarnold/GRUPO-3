@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CURSOS</title>
+    <title> Detalhes dos Cursos</title>
      <!-- Magnific -->
      <link href="stylesheets/magnific-popup.css" rel="stylesheet" type="text/css" />
      <!-- css -->
@@ -34,7 +34,7 @@
                             <a class="nav-link" href="contato">Contato</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link" href="/">Logout</a>
+                            <a class="nav-link" href="login">Login</a>
                         </li>
                     </ul><!--end navbar nav-->
           </div><!--end collapse-->
@@ -50,8 +50,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="title-heading text-center mt-5 pt-4">
-                                <h1 class="heading text-white mb-3">Edição de Cursos</h1>
-                                                               
+                                <h1 class="heading text-white mb-3">Informações dos Cursos</h1>
+                                                                </div>
                             </div>
                         </div><!--end col-->
                     </div><!--end row-->
@@ -60,115 +60,54 @@
         </div><!--end home center-->
     </section><!--end section-->
     <!-- Hero End -->
-</header><br><br><br><br><br>
+</header>
 <body>
-  <div class="col-md-12">
-    <main class="container">
-           
-        <h3>Cursos cadastrados</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Título</th>
-              <th scope="col">Duração</th>
-              <th scope="col">Preço</th>
-              <th scope="col">Autor</th>
-             
-            </tr>
-          </thead>
-          <tbody>
-          <% courses.forEach(function(course) { %>
-            <tr>
-              <th scope="row"><%- courses.id %></th>
-              <td><%- course.tittle %></td>
-              <td><%- course.extent %></td>
-              <td><%- course.price %></td>
-              <td><%- course.owner %></td>
-              <td>
-                <div class="row">
-                  <div class="col-md-3">
-                    <a
-                      role="button"
-                      href="/cursos/edit/<%-course.id%>"
-                      class="btn btn-warning"
-                    >
-                      Editar
-                    </a>
-                  </div>
-                  <div class="col-md-3">
-                    <form method="POST" action="/cursos?_method=DELETE">
-                      <input type="text" hidden name="id" value="<%-course.id%>" />
-                      <button role="delete" data-courses-id="<%-course.id%> type="submit" class="btn btn-danger">
-                        Excluir
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <% });%>
-          </tbody>
-        </table>
-      </section>
-      <div class="col-md-12">
-        <main class="container">
-        <h3>Cadastro novo curso</h3>
-        <form action="" method="post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-12">
-                  <label for="tittle" class="form-label">Título</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="tittle"
-                    name="tittle"
-                    required
-                  />
-                </div>
-                <div class="col-md-12">
-                  <label for="extent" class="form-label">Duração</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="extent"
-                    name="extent"
-                    required
-                  />
-                </div>
-                <div class="col-md-12">
-                  <label for="price" class="form-label">Preço</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="price"
-                    name="price"
-                    required
-                  />
-                </div>
-                
-              
-                <div class="mt-1 d-flex justify-content-end">
-                  <button type="reset" class="btn btn-default">Cancelar</button>
-                  <button type="submit" class="btn btn-primary">
-                    Cadastrar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-        </form>
-      </section>
-    </main>
     
-  
+          <!-- Services Start -->
+    <section class="section bg-light" id="offer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                       
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
 
-    
-<br><br><br><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-5 pt-4">
+                    <div class="services border pt-5 p-4 rounded bg-white">
+                        <div class="icon position-relative border rounded bg-white mb-4">
+                            <i class="mdi mdi-star-outline"></i>
+                        </div>
+                        
+                        <div class="content">
+                            <h4 class="title mb-3">PHP 7 Completo</h4>
+                            <p class="text-muted"> Procurando se especializar como Programador WEB? Ou talvez buscando uma carreira que ofereça mais tempo livre e flexibilidade? Sempre teve curiosidade em aprender de uma forma prática, como programar no lado Back-End?  
+
+                                Qualquer que seja sua motivação você veio ao lugar certo.
+                                
+                                Este Curso de PHP 7 Completo vai proporcionar em um só lugar tudo o que precisa saber para criar seu próprio website. A equipe de instrutores da Hcode estará disponível para responder suas dúvidas. 
+                                
+                                Neste curso cobriremos os seguintes tópicos:
+                                
+                                Aprenda em um curso completo a linguagem PHP, e sua nova versão 7, aprenda o que mudou em relação ao PHP 5.6 além de boas práticas e os comandos mais importantes. Mesmo que você não tenha conhecimento algum e nunca tenha programado, conseguirá acompanhar com inúmeros exemplos e dicas dos Instrutores que atuam há mais de 10 anos com PHP.
+                                
+                                Aprenda a criar um sistema administrativo de uma loja virtual gerando boleto bancário.
+                                
+                                Trabalhe com Banco de Dados, Segurança.
+                                
+                                Aprenda a criar um recursos incríveis, utilizando PHP e MySQL.
+                                
+                                Ao final deste curso PHP 7 você estará apto a criar sites modernos e completos, poderá se diferenciar no mercado de trabalho e até mesmo começar uma nova carreira de desenvolvedor web.</p>
+                            
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!--end section-->
+
     <!-- Footer Start -->
     <footer class="footer py-5 bg-dark">
         <div class="container">
@@ -183,7 +122,7 @@
                         <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
                         <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
                     </ul><!--end icon-->
-                </div><!--end col-->
+                </div> <!--end col-->
 
                 <div class="col-lg-2 col-md-3 mt-4 pt-2 mt-lg-0 pt-lg-0">
                     <h4 class="text-light text-uppercase footer-head">Links</h4>
@@ -283,9 +222,3 @@
     <script src="js/app.js"></script>
   </body>
 </html>
-
-
-
-
-
-

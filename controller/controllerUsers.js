@@ -1,14 +1,13 @@
-const modelCurse = require("../model/modelUsers");
+const modelUsers = require("../model/modelUsers");
 
  async function get (req,res){
-   const users = await modelUsers.getUsers();
-   res.render("users",{users:users});
+     res.render("users");
 }
 
 async function post(req,res){
     const user = req.body;
     await modelUsers.insertUsers(user);
-    res.redirect("/users");
+    res.redirect("/cursos");
 
 }
 
