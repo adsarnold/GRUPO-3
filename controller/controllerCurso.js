@@ -3,6 +3,10 @@ const modelCurse = require("../model/modelCurso");
    const curse = await modelCurse.getCurso();
    res.render("curso",{courses:curse});
 }
+async function getCurso(req, res) {
+   const curse = await modelCurse.getCurso();
+   res.render("curso", {curse: curse})
+ }
 async function getEdit(req,res){
    const curseId = req.params.id;
    const curse = await modelCurse.getCursoById(curseId);
@@ -31,5 +35,6 @@ module.exports = {
    put:put,
    get:get,
    getEdit:getEdit,
-   post:post
+   post:post,
+   getCurso:getCurso 
 }

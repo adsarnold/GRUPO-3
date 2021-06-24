@@ -1,4 +1,5 @@
 const modelLogin = require("../model/modelLogin");
+
  async function get (req,res){
    const login = await modelCurse.getLogin();
    res.render("login",{login:login});

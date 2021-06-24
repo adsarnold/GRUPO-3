@@ -18,24 +18,26 @@ async function getCurso() {
   }
   
   async function insertCurso(courses) {
-    await db.query("insert into courses (tittle, extent, price, date) values (:tittle, :extent, :price, :date)", {
+    await db.query("insert into courses (tittle, extent, price, date, owner) values (:tittle, :extent, :price, :date, :owner)", {
       replacements: {
         tittle: courses.tittle,
         extent: courses.extent,
         price: courses.price,
-        date: courses.date
+        date: courses.date,
+        owner: courses.owner
       }
     })
   }
   
   
   async function updateCurso(courses) {
-    await db.query("update courses set tittle = :tittle, extent = :extent, price = :price where id = :id", {
+    await db.query("update courses set tittle = :tittle, extent = :extent, price = :price, owner = :owner where id = :id", {
       replacements: {
         id: courses.id,
         tittle: courses.tittle,
         extent: courses.extent,
-        price: courses.price
+        price: courses.price,
+        owner: courses.owner
       }
     })
   }
