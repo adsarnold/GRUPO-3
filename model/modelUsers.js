@@ -18,10 +18,10 @@ async function getUsers() {
   }
   
   async function insertUsers(users) {
-    await db.query("insert into users (name, password) values (:name, :password)", {
+    await db.query("insert into users (nome, senhas) values (:name, :password)", {
       replacements: {
         name: users.name,
-        senhas: users.senhas
+        password: users.password
       }
     })
   }

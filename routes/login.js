@@ -23,4 +23,9 @@ router.post("/", middleware.validateCredentials, function (req, res) {
   res.redirect("/cursos");
 });
 
+//router.post('/logoff', function(req, res, next){
+  //req.logOut();
+  //res.redirect('/');
+//})
+
 module.exports = router;

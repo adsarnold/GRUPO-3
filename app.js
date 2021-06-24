@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 var cursoRouter = require('./routes/curso');
 var myaccountRouter = require('./routes/myaccount');
 var loginRouter = require('./routes/login')
+var cursophpRouter = require('./routes/cursophp');
 
 var listRouter = require('./routes/list');
 var detailsRouter = require('./routes/details');
@@ -40,6 +41,7 @@ app.use('/users', usersRouter);
 app.use('/cursos', cursoRouter);
 app.use('/myaccount', myaccountRouter);
 app.use('/login', loginRouter);
+app.use('/cursophp', cursophpRouter)
 
 app.use('/list', listRouter);
 app.use('/details', detailsRouter);
